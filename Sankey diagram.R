@@ -1,4 +1,6 @@
 
+
+
 # Sankey diagram
 # Load necessary libraries
 library(dplyr)
@@ -6,8 +8,8 @@ library(ggplot2)
 library(ggalluvial)
 
 # Load the datasets
-sc_data <- read.csv("~/Desktop/Projects/sweet_potato_scRNA/DEG_scRNA_seq/All_cell type_DEG/All_cell type_DEGs.csv")
-bulk_data <- read.csv("~/Desktop/Projects/sweet_potato_scRNA/DEGs_bulk-RNAseq/bulk_RNA_sig_genes_DESeq2.csv")
+sc_data <- read.csv("~/DEG_scRNA_seq/All_cell type_DEG/All_cell type_DEGs.csv")
+bulk_data <- read.csv("~/bulk_RNA_sig_genes_DESeq2.csv")
 
 # Assume the bulk and scRNA-seq datasets have the column 'gene_id' for merging
 # and 'Direction' columns named appropriately ('Direction_bulk' and 'Direction_sc')
